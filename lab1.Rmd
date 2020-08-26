@@ -1,6 +1,6 @@
 ---
 title: "Demo RStudio and EDA"
-author: Merlise Clyde
+author: Peyton Chen
 output:
   pdf_document: default
   html_notebook: default
