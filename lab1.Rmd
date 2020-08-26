@@ -32,7 +32,7 @@ The following illustrate commands for exploring this exercise using R and variou
 ### Libraries
 
 Try to load the `ISLR` library
-```{r}
+```{r load library}
 library(ISLR)
 ```
 
@@ -214,15 +214,21 @@ Use the `lm` function as described in class to fit a linear model with `Apps` as
 ```{r}
 # add lm code here
 # 
-# mymodel = lm(Apps ~ XXX, data=College)
+mymodel = lm(Apps ~ Accept + Private + Enroll, data=College)
+mymodel
 ```
+
+```{r}
+summary(mymodel)
+```
+
 
 
 For the fitted model, produce diagnostic plots
 
 ```{r}
 # add diagnostic plots here
-# plot(mymodel)
+plot(mymodel)
 ```
 
 Discuss whether the model seems appropriate in terms of assumptions.
